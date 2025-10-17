@@ -1,0 +1,68 @@
+========================================
+Inventory & Sales Tracking System
+========================================
+
+--------
+Domain
+--------
+Retail / Sales Operations
+
+------------------
+Problem Statement
+------------------
+Retail businesses require a system to effectively manage products in inventory and track sales to ensure smooth operations. Manual methods often lead to stockouts, overselling, and poor visibility into sales trends.
+
+This project will create an Inventory & Sales Tracking System that can:
+
+1. Manage products with attributes (id, name, price, stock).
+2. Record sales transactions.
+3. Update stock after each sale.
+4. Prevent invalid sales (e.g., selling more than available stock).
+5. Generate reports such as:
+    a. Current inventory status (which products are available/low stock).
+    b. Sales summary (total sales amount, most sold product).
+
+students will learn:
+-------------------- 
+Python Basics → Loops, conditionals, and built-in functions.
+Functions → Reusable methods with arguments.
+Data Structures → Using lists/dictionaries to manage inventory and sales.
+Object-Oriented Programming (OOP) → Classes for Product, Sale, and Managers.
+Exception Handling → Handling errors such as out-of-stock sales.
+Reports & Summaries → Aggregating data for business insights.
+Modular Programming → Organizing code into separate files.
+(Optional Extension) Database storage with SQLite/MySQL.
+
+
+Step-by-Step Workflow for Students:
+-----------------------------------
+1. Product Class (product.py)
+	a. Create a class with id, name, price, stock.
+	b. Implement methods to update stock and display product details.
+2. Sale Class (sale.py)
+	a.Each sale should store id, product_id, quantity, date.
+	b. Record the total value of the sale (price × quantity).
+3. Inventory Manager (inventory_manager.py)
+	a. Add products.
+	b.Update or remove products.
+	c.List all available products.
+4. Sales Manager (sales_manager.py)
+	a.Record a sale (reduce product stock).
+	b.Prevent sales when insufficient stock.
+5. Reports Module (reports.py)
+	a. Generate inventory report (stock levels).
+	b. Generate sales report (total sales, most sold product).
+6. Custom Exceptions (exceptions.py)
+	a.Define OutOfStockError when trying to sell more than available stock.
+7. Main Program (main.py)
+	Menu-driven system:
+	a. Manage products
+	b. Record sales
+	c. View reports
+	d. Exit
+
+Student Breakdown of Tasks
+---------------------------
+Student A: Product and InventoryManager (managing product lifecycle).
+Student B: Sale and SalesManager (recording sales, stock updates).
+Student C: Reports, Exceptions, and main.py (reports, error handling, user interface).
